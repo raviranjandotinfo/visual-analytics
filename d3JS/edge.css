@@ -1,0 +1,57 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font: 10px sans-serif;
+}
+/* written css for D3tip  */
+#svgContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+.d3-tip {
+    line-height: 1;
+    font-weight: bold;
+    padding: 12px;
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    border-radius: 2px;
+}
+
+/* creating and extending trangular shaope  */
+.d3-tip:after {
+    box-sizing: border-box;
+    display: inline;
+    width: 100%;
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    text-align: center;
+}
+
+/* doing d3 tip after  */
+.d3-tip.n:after {
+    content: "\25Bc";
+    top: 100%;
+    left: 0;
+    margin: -3px 0 0 0;
+}
+
+.d3-tip.n.bottom:after {
+    content: "\25B2";
+    top: unset;
+    bottom: 100%;
+    left: 0;
+    margin: 0 0 -3px 0;
+}
+.tooltip-style div{
+    font-size: 12px;
+    font-family: Arial;
+    line-height: 1.5;
+}

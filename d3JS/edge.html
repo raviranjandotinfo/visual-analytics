@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Network graph on D3</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <!--Including cloud flare cdn to use the d3 javascript minified library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.1.1/d3.min.js" ></script>
+    <script src="https://unpkg.com/d3-v6-tip@1.0.6/build/d3-v6-tip.js"></script>
+    <!--Including internal css file for better styling -->
+    <link rel="stylesheet" href="edge.css">
+    <style>
+    </style>
+</head>
+
+<body>
+    <div style="text-align: center;">
+        <h1>Network graph on D3</h1>
+    </div>
+    <div id="svgContainer">
+    </div>
+    <script src="HEdge.js"></script>
+    <div style = "margin-left: 10px;">
+        <h4>color description</h4>
+        <dl>
+            <dt>Green</dt>
+            <dd>- Email Communications</dd>
+            <dt>Red</dt>
+            <dd>- Phone call communications</dd>
+            <dt>pink</dt>
+            <dd>- Meetings</dd>
+          </dl>
+    </div>
+    <div style="text-align: right;">
+        <p>Keep mouse hover on name for few seconds to see the details</p>
+        <p>Reference : <a href="https://observablehq.com/@d3/hierarchical-edge-bundling " target="_blank">https://observablehq.com/@d3/hierarchical-edge-bundling</a> </p></div><br/>
+    </div>
+</body>
+
+</html>
